@@ -15,6 +15,7 @@ fundamental risk and return concepts used in quantitative finance.
 
 ## Key Metrics (Example Output)
 <img width="846" height="452" alt="image" src="https://github.com/user-attachments/assets/a8f15a0a-77d7-4fba-8eae-0df9f50090a2" />
+
 - Annual Return:  0.3146
 - Volatility:  0.1894
 - Sharpe Ratio:  1.3968
