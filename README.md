@@ -2,7 +2,6 @@
 
 This project analyzes a simple 3-stock portfolio (Apple, Microsoft, Amazon) to demonstrate fundamental risk and return concepts used in quantitative finance. Portfolio analysis is not only about how much return was acheived, but also about how much risk was taken to get that return. By adding VaR and CVaR, this project goes beyond basic metrics and demonstrate understanding of **tail risk**, which is critical in professional risk management and quantitative finance.
 
---
 
 ## Phase 1: Basic Portfolio Metrics
 - Built a portfolio with weights: AAPL (40%), MSFT (30%), AMZN (30%)
@@ -14,7 +13,6 @@ This project analyzes a simple 3-stock portfolio (Apple, Microsoft, Amazon) to d
   - Annualized Volatility
   - Sharpe Ratio
 
---
 
 ## Phase 2: Value at Risk (VaR) and Conditional VaR (CVaR)
 - Implemented **Historical VaR** (95%, 99%)
@@ -28,7 +26,6 @@ This project analyzes a simple 3-stock portfolio (Apple, Microsoft, Amazon) to d
 - CVaR (95%): –2.9% → average loss if the 5% worst days occur
 - CVaR (99%): –3.8% → average loss if the 1% worst days occur
 
---
 
 ## Tools
 Python (pandas, yfinance, matplotlib, numpy)
