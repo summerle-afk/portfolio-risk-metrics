@@ -9,9 +9,9 @@ This project analyzes a simple 3-stock portfolio (Apple, Microsoft, Amazon) to d
 - Computed **portfolio returns** using weighted averages
 - Analyzed **cumulative portfolio growth** starting with a $1 investment
 - Measured **risk-adjusted performance** using:
-  - Annualized Return
-  - Annualized Volatility
-  - Sharpe Ratio
+  - Annualized Return: 0.3146
+  - Annualized Volatility: 0.1894
+  - Sharpe Ratio: 1.3968
 
 
 ## Phase 2: Value at Risk (VaR) and Conditional VaR (CVaR)
