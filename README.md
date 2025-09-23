@@ -1,9 +1,10 @@
 # Portfolio Risk Metrics
 
-This project analyzes a simple 3-stock portfolio (Apple, Microsoft, Amazon) to demonstrate
-fundamental risk and return concepts used in quantitative finance.
+This project analyzes a simple 3-stock portfolio (Apple, Microsoft, Amazon) to demonstrate fundamental risk and return concepts used in quantitative finance. Portfolio analysis is not only about how much return was acheived, but also about how much risk was taken to get that return. By adding VaR and CVaR, this project goes beyond basic metrics and demonstrate understanding of **tail risk**, which is critical in professional risk management and quantitative finance.
 
-## Overview
+--
+
+## Phase 1: Basic Portfolio Metrics
 - Built a portfolio with weights: AAPL (40%), MSFT (30%), AMZN (30%)
 - Calculated **daily returns** from stock price data
 - Computed **portfolio returns** using weighted averages
@@ -13,22 +14,21 @@ fundamental risk and return concepts used in quantitative finance.
   - Annualized Volatility
   - Sharpe Ratio
 
-## Key Metrics (Example Output)
-<img width="846" height="452" alt="image" src="https://github.com/user-attachments/assets/a8f15a0a-77d7-4fba-8eae-0df9f50090a2" />
+--
 
-- Annual Return:  0.3146
-- Volatility:  0.1894
-- Sharpe Ratio:  1.3968
+## Phase 2: Value at Risk (VaR) and Conditional VaR (CVaR)
+- Implemented **Historical VaR** (95%, 99%)
+- Implemented **Parametric VaR** (95%, 99%) using normal distribution assumption
+- Calculated **Conditional VaR (CVaR, Expected Shortfall)**
+- Visualized the return distribution with VaR and CVaR cutoff lines
 
-## Visualization
-- Cumulative growth of a $1 investment over 2024  
-  (Generated using Matplotlib)
+**Key Insights**
+- Historical VaR (95%): -2% → 5% chance daily loss exceeds –2%
+- Historical VaR (99%): –3.4% → 1% chance daily loss exceeds –3.4%
+- CVaR (95%): –2.9% → average loss if the 5% worst days occur
+- CVaR (99%): –3.8% → average loss if the 1% worst days occur
 
-## Why This Matters
-Portfolio analysis is not only about **how much return** was achieved, but also about  
-**how much risk was taken to get that return**.  
-This project shows that I understand both **return** and **risk-adjusted performance**,  
-which are central concepts in risk management and quantitative finance.
+--
 
----
-*Tools: Python (pandas, yfinance, matplotlib, numpy)*
+## Tools
+Python (pandas, yfinance, matplotlib, numpy)
